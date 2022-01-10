@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* { 
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Bebas Neue', cursiva;
+ } 
+ 
+body { 
+    margin-top: 100px;
+    margin-right: 500px;
+    margin-left: 500px;
+    border: 15px solid black;
+    height: 450px;
+    width: 400px;
+    border-radius: 50px;
+    padding: 10px;
+    background: linear-gradient(45deg, rgb(25, 67, 80), rgb(192, 189, 189), rgb(25, 67, 80));
+    background-size: 300% 300%;
+    animation: animaçao 10s ease-in-out infinite;
+}
+
+    
+    h2 { 
+        margin: 0;
+        font-size: max(20px, 1vw);
+        font-family: 'amatic sc', sans-serif;
+    }
+
+    h1 {
+        text-shadow: 2px 2px rgb(255, 255, 255);
+        letter-spacing: 4px;
+        font-family: 'amatic sc', sans-serif;
+    }
+
+
+@keyframes animaçao {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+    
+}
