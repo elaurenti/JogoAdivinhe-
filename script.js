@@ -17,12 +17,9 @@ let tentativaAtual = 1;
 
 function checarPalpite() {
     let valorCampo = Number(userPalpite.value);
-    if (tentativaAtual === 1) {
-        
-        mensagemPalpites.textContent = 'Palpites anteriores: ';
-    }
-    mensagemPalpites.textContent += tentativaAtual+'.';
-
+    
+        mensagemPalpites.textContent = 'Tentativas: '+ tentativaAtual;
+    
     if (valorCampo === numeroAleatorio) {
         resultadoFinal.textContent = 'Parabéns! Você acertou!';
         resultadoFinal.style.backgroundColor = 'green';
